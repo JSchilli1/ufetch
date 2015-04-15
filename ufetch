@@ -1,42 +1,18 @@
-#!/bin/sh
-#
-# ufetch - tiny system info for crux
-#
-
-## INFO
-
-# user is already defined
-HOST=$(hostname)
-OS=$(crux)
-KERNEL=$(uname -sr)
-UPTIME=$(uptime -p | sed s:"up "::)
-PACKAGES=$(pkginfo -i | wc -l)
-# shell is already defined
-WM=$(tail -n 1 "$HOME/.xinitrc" | cut -d " " -f2)
-
-## DEFINE COLORS
-
-bc=$(tput bold)		# bold
-c0=$(tput setaf 0)	# black
-c1=$(tput setaf 1)	# red
-c2=$(tput setaf 2)	# green
-c3=$(tput setaf 3)	# yellow
-c4=$(tput setaf 4)	# blue
-c5=$(tput setaf 5)	# magenta
-c6=$(tput setaf 6)	# cyan
-c7=$(tput setaf 7)	# white
-rc=$(tput sgr0)		# reset
-
-## OUTPUT
-
-cat <<EOF
-
-${c6}      ___     ${bc}${USER}${c7}@${c6}${HOST}${rc}
-${c6}     (${c7}.· ${c6}|    ${bc}OS:       ${c7}${OS}${rc}
-${c6}     (${c3}<> ${c6}|    ${bc}KERNEL:   ${c7}${KERNEL}${rc}
-${c6}    / ${c7}__  ${c6}\\   ${bc}UPTIME:   ${c7}${UPTIME}${rc}
-${c6}   ( ${c7}/  \ ${c6}/|  ${bc}PACKAGES: ${c7}${PACKAGES}${rc}
-${c3}  _${c6}/\ ${c7}__)${c6}/${c3}_${c6})  ${bc}SHELL:    ${c7}${SHELL}${rc}
-${c3}  \/${c6}-____${c3}\/   ${c6}${bc}WM:       ${c7}${WM}${rc}
-
-EOF
+         -/oyddmdhs+:.                jakuzure@gentoo
+     -odNMMMMMMMMNNmhy+-`             OS: Gentoo GNU/Linux 
+   -yNMMMMMMMMMMMNNNmmdhy+-           Kernel: x86_64 Linux 3.19.3-gentoo
+ `omMMMMMMMMMMMMNmdmmmmddhhy/`        Uptime: 420m
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Packages: 1337
+.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Shell: bash 4.3.33
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Resolution: 1920x1080
+  :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   DE: KDE 4.14.6
+    .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   WM: KWin
+       /mMMMMMMNNNmmmdddhhhhhmMNhs:   WM Theme: Oxygen
+    `oNMMMMMMMNNNmmmddddhhdmMNhs+`    GTK Theme: oxygen-gtk [GTK2], Default [GTK3]
+  `sNMMMMMMMMNNNmmmdddddmNMmhs/.      Icon Theme: oxygen
+ /NMMMMMMMMNNNNmmmdddmNMNdso:`        Font: Sans Serif 
++MMMMMMMNNNNNmmmmdmNMNdso/-           CPU: Intel Core2 Quad CPU Q8200 @ 2.333GHz
+MNNNNNNNmmmmmNNMmhs+/-`               GPU: AMD Radeon HD 7900 Series  
+/hMMNNNNNNNNMNdhs++/-`                RAM: 2493MB / 3958MB
+`/ohdmmddhys+++/:.`                  
+  `-//////:--.                       
