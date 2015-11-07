@@ -38,12 +38,12 @@ pc="${c6}"		# penguin
 
 cat <<EOF
 
-${pc}      ___${rc}     ${nc}${USER}${rc}${tc}@${rc}${nc}${HOST}${rc}
-${pc}     (${rc}${c7}.·${rc} ${pc}|${rc}    ${lc}OS:${rc}       ${tc}${OS}${rc}
-${pc}     (${rc}${c3}<>${rc} ${pc}|${rc}    ${lc}KERNEL:${rc}   ${tc}${KERNEL}${rc}
-${pc}    /${rc} ${c7}__${rc}  ${pc}\\${rc}   ${lc}UPTIME:${rc}   ${tc}${UPTIME}${rc}
-${pc}   (${rc} ${c7}/  \\${rc} ${pc}/|${rc}  ${lc}PACKAGES:${rc} ${tc}${PACKAGES}${rc}
-${c3}  _${pc}/\\${rc} ${c7}__)${rc}${pc}/${rc}${c3}_${rc}${pc})${rc}  ${lc}SHELL:${rc}    ${tc}${SHELL}${rc}
-${c3}  \/${pc}-____${rc}${c3}\/${rc}   ${lc}WM:${rc}       ${tc}${WM}${rc}
+${pc}   (  )${rc}        ${nc}${USER}${rc}${tc}@${rc}${nc}${HOST}${rc}
+${pc}     (   )${rc}     ${lc}OS:${rc}       ${tc}${OS}${rc}
+${pc}  (   ) (${rc}      ${lc}KERNEL:${rc}   ${tc}${KERNEL}${rc}
+${pc}   ) _   )${rc}     ${lc}UPTIME:${rc}   ${tc}${UPTIME}${rc}
+${pc}    ( \_${rc}       ${lc}PACKAGES:${rc} ${tc}${PACKAGES}${rc}
+${pc}  _(_\ \)__${rc}    ${lc}SHELL:${rc}    ${tc}${SHELL}${rc}
+${pc} (____\___))${rc}   ${lc}WM:${rc}       ${tc}${WM}${rc}
 
 EOF
