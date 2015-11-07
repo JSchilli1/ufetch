@@ -32,7 +32,6 @@ lc=${bc}${c5}			# labels
 nc=${bc}${c5}			# user and hostname
 tc=${bc}${c7}			# text
 fc=${bc}${c5}			# first color
-sc=${c5}					# second color
 
 ## OUTPUT
 

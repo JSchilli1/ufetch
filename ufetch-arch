@@ -33,18 +33,17 @@ lc="${bc}${c6}"		# labels
 nc="${bc}${c6}"		# user and hostname
 tc="${bc}${c7}"		# text
 fc="${bc}${c6}"		# first color
-sc="${c6}"		# second color
 
 ## OUTPUT
 
 cat <<EOF
 
-${fc}        /\\${rc}        ${nc}${USER}${rc}${tc}@${rc}${nc}${HOST}${rc}
-${fc}       /^^\\${rc}       ${lc}OS:${rc}       ${tc}${OS}${rc}
-${fc}      /\   \\${rc}      ${lc}KERNEL:${rc}   ${tc}${KERNEL}${rc}
-${fc}     /${rc}  ${sc}__  \\${rc}     ${lc}UPTIME:${rc}   ${tc}${UPTIME}${rc}
-${sc}    /  (  )  \\${rc}    ${lc}PACKAGES:${rc} ${tc}${PACKAGES}${rc}
-${sc}   / __|  |__\\\\${rc}   ${lc}SHELL:${rc}    ${tc}${SHELL}${rc}
-${sc}  ///        \\\\\\${rc}  ${lc}WM:${rc}       ${tc}${WM}${rc}
+${fc}   (  )${rc}        ${nc}${USER}${rc}${tc}@${rc}${nc}${HOST}${rc}
+${fc}     (   )${rc}     ${lc}OS:${rc}       ${tc}${OS}${rc}
+${fc}  (   ) (${rc}      ${lc}KERNEL:${rc}   ${tc}${KERNEL}${rc}
+${fc}   ) _   )${rc}     ${lc}UPTIME:${rc}   ${tc}${UPTIME}${rc}
+${fc}    ( \_${rc}       ${lc}PACKAGES:${rc} ${tc}${PACKAGES}${rc}
+${fc}  _(_\ \)__${rc}    ${lc}SHELL:${rc}    ${tc}${SHELL}${rc}
+${fc} (____\___))${rc}   ${lc}WM:${rc}       ${tc}${WM}${rc}
 
 EOF
