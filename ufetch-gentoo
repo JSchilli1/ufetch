@@ -38,12 +38,12 @@ sc=${c5}					# second color
 
 cat <<EOF
 
-${fc}   _-----_${rc}     ${nc}${USER}${rc}${tc}@${rc}${nc}${HOSTNAME}${rc}
-${fc}  (       \\${rc}    ${lc}OS:${rc}        ${tc}${OS}${rc}
-${fc}  \    0   \\${rc}   ${lc}KERNEL:${rc}    ${tc}${KERNEL}${rc}
-${sc}   \        )${rc}  ${lc}UPTIME:${rc}    ${tc}${UPTIME}${rc}
-${sc}   /      _/${rc}   ${lc}PACKAGES:${rc}  ${tc}${PACKAGES}${rc}
-${sc}  (     _-${rc}     ${lc}SHELL:${rc}     ${tc}${SHELL}${rc}
-${sc}  \____-${rc}       ${lc}WM:${rc}        ${tc}${WM}${rc}
+${fc}   (  )${rc}        ${nc}${USER}${rc}${tc}@${rc}${nc}${HOSTNAME}${rc}
+${fc}     (   )${rc}     ${lc}OS:${rc}        ${tc}${OS}${rc}
+${fc}  (   ) (${rc}      ${lc}KERNEL:${rc}    ${tc}${KERNEL}${rc}
+${fc}   ) _   )${rc}     ${lc}UPTIME:${rc}    ${tc}${UPTIME}${rc}
+${fc}    ( \_${rc}       ${lc}PACKAGES:${rc}  ${tc}${PACKAGES}${rc}
+${fc}  _(_\ \)__${rc}    ${lc}SHELL:${rc}     ${tc}${SHELL}${rc}
+${fc} (____\___))${rc}   ${lc}WM:${rc}        ${tc}${WM}${rc}
 
 EOF
