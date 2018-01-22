@@ -42,12 +42,12 @@ sc="${rc}${c7}"			# second color
 
 cat <<EOF
 
-${sc}    /fFF      ${nc}${USER}${ic}@${nc}${hostname}${rc}
-${sc}    fFF       ${lc}OS:        ${ic}${os}${rc}
-${sc}  fffFFfff    ${lc}KERNEL:    ${ic}${kernel}${rc}
-${sc}  fffFFfff    ${lc}UPTIME:    ${ic}${uptime}${rc}
-${sc}    fFF       ${lc}PACKAGES:  ${ic}${packages}${rc}
-${sc}    fFF       ${lc}SHELL:     ${ic}${shell}${rc}
-${sc}   FFf/       ${lc}WM:        ${ic}${WM}${rc}
+${fc}  :::${sc}/fFF${fc}:::   ${nc}${USER}${ic}@${nc}${hostname}${rc}
+${fc} ::::${sc}fFF${fc}:::::  ${lc}OS:        ${ic}${os}${rc}
+${fc} ::${sc}fffFFfff${fc}::  ${lc}KERNEL:    ${ic}${kernel}${rc}
+${fc} ::${sc}fffFFfff${fc}::  ${lc}UPTIME:    ${ic}${uptime}${rc}
+${fc} ::::${sc}fFF${fc}::::   ${lc}PACKAGES:  ${ic}${packages}${rc}
+${fc} ::::${sc}fFF${fc}:::    ${lc}SHELL:     ${ic}${shell}${rc}
+${fc} :::${sc}FFf/${fc}::     ${lc}WM:        ${ic}${WM}${rc}
 
 EOF
