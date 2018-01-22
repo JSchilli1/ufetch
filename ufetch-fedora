@@ -12,10 +12,9 @@ kernel="$(uname -sr)"
 uptime="$(uptime -p | sed 's/up //')"
 packages="$(yum list installed | wc -l)"
 shell="$(basename ${SHELL})"
-WM="$(wmctrl -m | grep 'Name:' | sed 's/Name\: //')"
-#if [ -z "${WM}" ]; then
-#	WM="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
-#fi
+if [ -z "${WM}" ]; then
+	WM="$(wmctrl -m | grep 'Name:' | sed 's/Name\: //')"
+fi
 
 ## DEFINE COLORS
 
